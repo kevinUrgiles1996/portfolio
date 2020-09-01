@@ -96,8 +96,6 @@ html {
   position: relative;
   margin-top: 50px;
   left: 50%;
-  bottom: 00%;
-  
 }
 
 .fa-angle-down{
@@ -111,6 +109,18 @@ html {
 .bounce {
   animation: bounce 2s 2.5s infinite ;
 }
+
+.list-inline-item img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.list-inline-item:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

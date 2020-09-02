@@ -53,3 +53,10 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+$('.list-inline-item').tooltip('enable');
+
+$('.img-modal').on('click', (event) => {
+    const imgSrc = event.target.src;
+    $('.modal-img').attr('src', imgSrc);
+});

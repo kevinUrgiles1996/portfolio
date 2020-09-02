@@ -24,7 +24,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #065446;
+  --primary: #00416d;
   --secondary: #fadcac;
   --success: #28a745;
   --info: #17a2b8;
@@ -114,11 +114,60 @@ html {
   display: block;
   height: 48px;
   width: auto;
+  cursor: pointer;
 }
 
 .list-inline-item:hover img {
-  cursor: pointer;
   transform: scale(1.2);
+}
+
+.tab-container {
+  min-height: 50vh;
+}
+
+
+ .modal-content{
+  width: 80vw;
+  background-color: transparent !important;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-img {
+  height: 80vh;
+  width: auto;
+}
+
+.img-modal:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  transform: scale(1.05);
+}
+
+#nav-home-tab.active,
+#nav-design-tab.active,
+#nav-personal-tab.active
+{
+  border-top: 1px solid var(--primary);
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+#nav-home-tab:hover,
+#nav-design-tab:hover,
+#nav-personal-tab:hover
+{
+  background: var(--primary);
+  color: white;
+}
+
+.nav-tabs{
+  border-color: var(--primary) !important;
 }
 
 
